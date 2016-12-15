@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_SUSO" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <TOBJ>
+    <OBJCT>ZP2P_EXP</OBJCT>
+    <FIEL1>BO_SERVICE</FIEL1>
+    <FIEL2>ACTVT</FIEL2>
+    <FIEL3>USER</FIEL3>
+    <FIEL4/>
+    <FIEL5/>
+    <FIEL6/>
+    <FIEL7/>
+    <FIEL8/>
+    <FIEL9/>
+    <FIEL0/>
+    <OCLSS>ZP2P</OCLSS>
+    <BNAME/>
+    <FBLOCK/>
+    <CONVERSION/>
+   </TOBJ>
+   <TOBJT>
+    <LANGU>E</LANGU>
+    <OBJECT>ZP2P_EXP</OBJECT>
+    <TTEXT>Expert</TTEXT>
+   </TOBJT>
+   <TOBJVORFLG>
+    <OBJCT>ZP2P_EXP</OBJCT>
+    <FLAG1/>
+    <FLAG2/>
+    <FLAG3/>
+    <FLAG4/>
+    <FLAG5/>
+    <ATTRIBUTES/>
+   </TOBJVORFLG>
+   <TACTZ/>
+   <TOBJVORDAT/>
+   <TOBJVOR/>
+  </asx:values>
+ </asx:abap>
+</abapGit>

@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_ENHO" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <TOOL>HOOK_IMPL</TOOL>
+   <SHORTTEXT>Substitute Helpcenter with Peer-to-peer-help</SHORTTEXT>
+   <ORIGINAL_OBJECT>
+    <PGMID>R3TR</PGMID>
+    <ORG_OBJ_TYPE>CLAS</ORG_OBJ_TYPE>
+    <ORG_OBJ_NAME>CL_WDR_HELP_HANDLER</ORG_OBJ_NAME>
+    <ORG_MAIN_TYPE>CLAS</ORG_MAIN_TYPE>
+    <ORG_MAIN_NAME>CL_WDR_HELP_HANDLER</ORG_MAIN_NAME>
+    <PROGRAMNAME>CL_WDR_HELP_HANDLER===========CP</PROGRAMNAME>
+    <INCLUDE_BOUND/>
+    <HOOK_IMPLS/>
+    <SAVE_ENHINCINX/>
+   </ORIGINAL_OBJECT>
+   <ENHANCEMENTS>
+    <ENH_HOOK_IMPL>
+     <SPOTNAME/>
+     <PROGRAMNAME>CL_WDR_HELP_HANDLER===========CP</PROGRAMNAME>
+     <EXTID>1</EXTID>
+     <ID>1</ID>
+     <OVERWRITE/>
+     <METHOD/>
+     <ENHMODE>D</ENHMODE>
+     <FULL_NAME>\TY:CL_WDR_HELP_HANDLER\ME:SET_CONTENT\SE:BEGIN\EI</FULL_NAME>
+     <SOURCE>
+      <item>* Use peer-to-peer-help instead of the usual helpcenter</item>
+      <item>IF wdr_task=&gt;application-&gt;if_wdr_application~help_center_open = abap_true. &quot;Help was requested</item>
+      <item/>
+      <item>DATA(lo_p2ph_ui_controller) = zcl_p2ph_ui_controller=&gt;create( iv_ui_technology = zcl_p2ph_ui_controller=&gt;co_ui_technology-webdynpro ).</item>
+      <item/>
+      <item>data(lo_application) = cl_wdr_task=&gt;application.</item>
+      <item>DATA(ls_help_info) = VALUE zif_p2ph_ui_controller=&gt;ty_help_info( wd_application = lo_application-&gt;name</item>
+      <item>title          = lo_application-&gt;application_window-&gt;if_wd_window~title ).</item>
+      <item/>
+      <item/>
+      <item>IF lo_p2ph_ui_controller-&gt;is_p2p_help_possible( ls_help_info ) EQ abap_true.</item>
+      <item/>
+      <item>DATA(lv_help_source) = lo_p2ph_ui_controller-&gt;get_configured_help_source( ).</item>
+      <item/>
+      <item>IF lv_help_source EQ zif_p2ph_ui_controller=&gt;gc_help_source-undefined.</item>
+      <item>TRY.</item>
+      <item>lv_help_source = lo_p2ph_ui_controller-&gt;select_help_source( ).</item>
+      <item>CATCH zcx_p2ph_ui INTO DATA(lx_aborted).</item>
+      <item>RETURN. &quot;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;</item>
+      <item>ENDTRY.</item>
+      <item>ENDIF.</item>
+      <item/>
+      <item>CASE lv_help_source.</item>
+      <item>WHEN zif_p2ph_ui_controller=&gt;gc_help_source-peer.</item>
+      <item>lo_p2ph_ui_controller-&gt;ask_for_support( ls_help_info ).</item>
+      <item>RETURN. &quot;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;</item>
+      <item>WHEN OTHERS.</item>
+      <item>*        trigger the usual help source (help center)</item>
+      <item>RETURN. &quot;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;</item>
+      <item>ENDCASE.</item>
+      <item>ENDIF. &quot;Peer-to-peer help possible</item>
+      <item/>
+      <item>ENDIF. &quot;Help requested</item>
+     </SOURCE>
+     <PARENT_FULL_NAME/>
+    </ENH_HOOK_IMPL>
+   </ENHANCEMENTS>
+   <SPACES>
+    <item>
+     <FULL_NAME>\TY:CL_WDR_HELP_HANDLER\ME:SET_CONTENT\SE:BEGIN\EI</FULL_NAME>
+     <SPACES>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+     </SPACES>
+    </item>
+   </SPACES>
+  </asx:values>
+ </asx:abap>
+</abapGit>

@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_ENHO" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <TOOL>HOOK_IMPL</TOOL>
+   <SHORTTEXT>Peer-to-Peer-Helpdesk</SHORTTEXT>
+   <ORIGINAL_OBJECT>
+    <PGMID>R3TR</PGMID>
+    <ORG_OBJ_TYPE>FUGR</ORG_OBJ_TYPE>
+    <ORG_OBJ_NAME>BCOS</ORG_OBJ_NAME>
+    <ORG_MAIN_TYPE>FUGR</ORG_MAIN_TYPE>
+    <ORG_MAIN_NAME>BCOS</ORG_MAIN_NAME>
+    <PROGRAMNAME>SAPLBCOS</PROGRAMNAME>
+    <INCLUDE_BOUND/>
+    <HOOK_IMPLS/>
+    <SAVE_ENHINCINX/>
+   </ORIGINAL_OBJECT>
+   <ENHANCEMENTS>
+    <ENH_HOOK_IMPL>
+     <SPOTNAME/>
+     <PROGRAMNAME>SAPLBCOS</PROGRAMNAME>
+     <EXTID>1</EXTID>
+     <ID>1</ID>
+     <OVERWRITE/>
+     <METHOD/>
+     <ENHMODE>D</ENHMODE>
+     <FULL_NAME>\FU:BCOS_CREATE_MSG\SE:BEGIN\EI</FULL_NAME>
+     <SOURCE>
+      <item>*  Integration into SAP Help-request from global menu:</item>
+      <item>*  Peer-to-peer helpdesk</item>
+      <item/>
+      <item>IF help_infos-call = &apos;H&apos;. &quot;Triggered from help-menu</item>
+      <item>DATA(lo_p2ph_ui_controller) = zcl_p2ph_ui_controller=&gt;create( iv_ui_technology = zcl_p2ph_ui_controller=&gt;co_ui_technology-sapgui ).</item>
+      <item>DATA(ls_help_info) = VALUE zif_p2ph_ui_controller=&gt;ty_help_info( dynpro_context = help_infos ).</item>
+      <item/>
+      <item>IF lo_p2ph_ui_controller-&gt;is_p2p_help_possible( ls_help_info ) = abap_true.</item>
+      <item>DATA(lv_help_source) = lo_p2ph_ui_controller-&gt;get_configured_help_source( ).</item>
+      <item/>
+      <item>IF lv_help_source EQ zif_p2ph_ui_controller=&gt;gc_help_source-undefined.</item>
+      <item>TRY.</item>
+      <item>lv_help_source = lo_p2ph_ui_controller-&gt;select_help_source( ).</item>
+      <item>CATCH zcx_p2ph_ui INTO DATA(lx_aborted).</item>
+      <item>return. &quot;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;</item>
+      <item>ENDTRY.</item>
+      <item>IF lv_help_source = zif_p2ph_ui_controller=&gt;gc_help_source-undefined.</item>
+      <item>*                Aborted</item>
+      <item>RETURN. &quot;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;</item>
+      <item>ENDIF.</item>
+      <item>ENDIF.</item>
+      <item/>
+      <item>IF lv_help_source EQ zif_p2ph_ui_controller=&gt;gc_help_source-peer.</item>
+      <item>lo_p2ph_ui_controller-&gt;ask_for_support( is_help_info = ls_help_info ).</item>
+      <item>RETURN. &quot;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;</item>
+      <item>ENDIF.</item>
+      <item>ENDIF. &quot;Peer-to-Peer-Help possible</item>
+      <item>ENDIF.</item>
+     </SOURCE>
+     <PARENT_FULL_NAME/>
+    </ENH_HOOK_IMPL>
+   </ENHANCEMENTS>
+   <SPACES>
+    <item>
+     <FULL_NAME>\FU:BCOS_CREATE_MSG\SE:BEGIN\EI</FULL_NAME>
+     <SPACES>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+     </SPACES>
+    </item>
+   </SPACES>
+  </asx:values>
+ </asx:abap>
+</abapGit>
