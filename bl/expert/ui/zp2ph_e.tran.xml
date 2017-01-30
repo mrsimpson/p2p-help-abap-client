@@ -6,20 +6,11 @@
     <TCODE>ZP2PH_E</TCODE>
     <PGMNA>ZPHPH_EXPERT_MAINTENANCE</PGMNA>
     <DYPNO>1000</DYPNO>
-    <MENUE/>
     <CINFO>gA==</CINFO>
-    <ARBGB/>
    </TSTC>
    <TSTCC>
     <TCODE>ZP2PH_E</TCODE>
     <S_WEBGUI>1</S_WEBGUI>
-    <S_WIN32/>
-    <S_PLATIN/>
-    <S_SERVICE/>
-    <S_PERVAS/>
-    <S_DUMMY/>
-    <S_DUMMY1/>
-    <S_DUMMY2/>
    </TSTCC>
    <TSTCT>
     <SPRSL>E</SPRSL>

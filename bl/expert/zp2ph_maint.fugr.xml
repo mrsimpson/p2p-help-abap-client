@@ -13,118 +13,47 @@
     <item>
      <FUNCNAME>TABLEFRAME_ZP2PH_MAINT</FUNCNAME>
      <INCLUDE>LZP2PH_MAINTU01</INCLUDE>
-     <GLOBAL_FLAG/>
-     <REMOTE_CALL/>
-     <UPDATE_TASK/>
      <SHORT_TEXT>Extended Table Maintenance: Upper Level</SHORT_TEXT>
-     <REMOTE_BASXML/>
      <IMPORT>
       <RSIMP>
        <PARAMETER>VIEW_ACTION</PARAMETER>
-       <DBFIELD/>
        <DEFAULT>&apos;S&apos;</DEFAULT>
-       <TYPES/>
-       <OPTIONAL/>
-       <REFERENCE/>
-       <CHANGING/>
-       <TYP/>
-       <CLASS/>
-       <REF_CLASS/>
-       <LINE_OF/>
-       <TABLE_OF/>
       </RSIMP>
       <RSIMP>
        <PARAMETER>VIEW_NAME</PARAMETER>
        <DBFIELD>DD02V-TABNAME</DBFIELD>
-       <DEFAULT/>
-       <TYPES/>
-       <OPTIONAL/>
-       <REFERENCE/>
-       <CHANGING/>
-       <TYP/>
-       <CLASS/>
-       <REF_CLASS/>
-       <LINE_OF/>
-       <TABLE_OF/>
       </RSIMP>
       <RSIMP>
        <PARAMETER>CORR_NUMBER</PARAMETER>
        <DBFIELD>E070-TRKORR</DBFIELD>
        <DEFAULT>&apos; &apos;</DEFAULT>
-       <TYPES/>
-       <OPTIONAL/>
-       <REFERENCE/>
-       <CHANGING/>
-       <TYP/>
-       <CLASS/>
-       <REF_CLASS/>
-       <LINE_OF/>
-       <TABLE_OF/>
       </RSIMP>
      </IMPORT>
-     <CHANGING/>
-     <EXPORT/>
      <TABLES>
       <RSTBL>
        <PARAMETER>DBA_SELLIST</PARAMETER>
        <DBSTRUCT>VIMSELLIST</DBSTRUCT>
-       <TYPES/>
-       <OPTIONAL/>
-       <TYP/>
-       <CLASS/>
-       <REF_CLASS/>
-       <LINE_OF/>
-       <TABLE_OF/>
       </RSTBL>
       <RSTBL>
        <PARAMETER>DPL_SELLIST</PARAMETER>
        <DBSTRUCT>VIMSELLIST</DBSTRUCT>
-       <TYPES/>
-       <OPTIONAL/>
-       <TYP/>
-       <CLASS/>
-       <REF_CLASS/>
-       <LINE_OF/>
-       <TABLE_OF/>
       </RSTBL>
       <RSTBL>
        <PARAMETER>EXCL_CUA_FUNCT</PARAMETER>
        <DBSTRUCT>VIMEXCLFUN</DBSTRUCT>
-       <TYPES/>
-       <OPTIONAL/>
-       <TYP/>
-       <CLASS/>
-       <REF_CLASS/>
-       <LINE_OF/>
-       <TABLE_OF/>
       </RSTBL>
       <RSTBL>
        <PARAMETER>X_HEADER</PARAMETER>
        <DBSTRUCT>VIMDESC</DBSTRUCT>
-       <TYPES/>
-       <OPTIONAL/>
-       <TYP/>
-       <CLASS/>
-       <REF_CLASS/>
-       <LINE_OF/>
-       <TABLE_OF/>
       </RSTBL>
       <RSTBL>
        <PARAMETER>X_NAMTAB</PARAMETER>
        <DBSTRUCT>VIMNAMTAB</DBSTRUCT>
-       <TYPES/>
-       <OPTIONAL/>
-       <TYP/>
-       <CLASS/>
-       <REF_CLASS/>
-       <LINE_OF/>
-       <TABLE_OF/>
       </RSTBL>
      </TABLES>
      <EXCEPTION>
       <RSEXC>
        <EXCEPTION>MISSING_CORR_NUMBER</EXCEPTION>
-       <IS_RESUMABLE/>
       </RSEXC>
      </EXCEPTION>
      <DOCUMENTATION>
@@ -188,202 +117,75 @@
      <FUNCNAME>TABLEPROC_ZP2PH_MAINT</FUNCNAME>
      <INCLUDE>LZP2PH_MAINTU02</INCLUDE>
      <GLOBAL_FLAG>X</GLOBAL_FLAG>
-     <REMOTE_CALL/>
-     <UPDATE_TASK/>
      <SHORT_TEXT>Lower-level extended table maintenance</SHORT_TEXT>
-     <REMOTE_BASXML/>
      <IMPORT>
       <RSIMP>
        <PARAMETER>FCODE</PARAMETER>
-       <DBFIELD/>
        <DEFAULT>&apos;RDED&apos;</DEFAULT>
-       <TYPES/>
-       <OPTIONAL/>
-       <REFERENCE/>
-       <CHANGING/>
-       <TYP/>
-       <CLASS/>
-       <REF_CLASS/>
-       <LINE_OF/>
-       <TABLE_OF/>
       </RSIMP>
       <RSIMP>
        <PARAMETER>VIEW_ACTION</PARAMETER>
-       <DBFIELD/>
        <DEFAULT>&apos;S&apos;</DEFAULT>
-       <TYPES/>
-       <OPTIONAL/>
-       <REFERENCE/>
-       <CHANGING/>
-       <TYP/>
-       <CLASS/>
-       <REF_CLASS/>
-       <LINE_OF/>
-       <TABLE_OF/>
       </RSIMP>
       <RSIMP>
        <PARAMETER>VIEW_NAME</PARAMETER>
        <DBFIELD>DD02V-TABNAME</DBFIELD>
-       <DEFAULT/>
-       <TYPES/>
-       <OPTIONAL/>
-       <REFERENCE/>
-       <CHANGING/>
-       <TYP/>
-       <CLASS/>
-       <REF_CLASS/>
-       <LINE_OF/>
-       <TABLE_OF/>
       </RSIMP>
       <RSIMP>
        <PARAMETER>CORR_NUMBER</PARAMETER>
        <DBFIELD>E070-TRKORR</DBFIELD>
        <DEFAULT>&apos; &apos;</DEFAULT>
-       <TYPES/>
-       <OPTIONAL/>
-       <REFERENCE/>
-       <CHANGING/>
-       <TYP/>
-       <CLASS/>
-       <REF_CLASS/>
-       <LINE_OF/>
-       <TABLE_OF/>
       </RSIMP>
      </IMPORT>
-     <CHANGING/>
      <EXPORT>
       <RSEXP>
        <PARAMETER>LAST_ACT_ENTRY</PARAMETER>
-       <DBFIELD/>
-       <TYPES/>
-       <REFERENCE/>
-       <TYP/>
-       <CLASS/>
-       <REF_CLASS/>
-       <LINE_OF/>
-       <TABLE_OF/>
       </RSEXP>
       <RSEXP>
        <PARAMETER>UCOMM</PARAMETER>
-       <DBFIELD/>
-       <TYPES/>
-       <REFERENCE/>
-       <TYP/>
-       <CLASS/>
-       <REF_CLASS/>
-       <LINE_OF/>
-       <TABLE_OF/>
       </RSEXP>
       <RSEXP>
        <PARAMETER>UPDATE_REQUIRED</PARAMETER>
-       <DBFIELD/>
-       <TYPES/>
-       <REFERENCE/>
-       <TYP/>
-       <CLASS/>
-       <REF_CLASS/>
-       <LINE_OF/>
-       <TABLE_OF/>
       </RSEXP>
      </EXPORT>
      <TABLES>
       <RSTBL>
        <PARAMETER>CORR_KEYTAB</PARAMETER>
        <DBSTRUCT>E071K</DBSTRUCT>
-       <TYPES/>
-       <OPTIONAL/>
-       <TYP/>
-       <CLASS/>
-       <REF_CLASS/>
-       <LINE_OF/>
-       <TABLE_OF/>
       </RSTBL>
       <RSTBL>
        <PARAMETER>DBA_SELLIST</PARAMETER>
        <DBSTRUCT>VIMSELLIST</DBSTRUCT>
-       <TYPES/>
-       <OPTIONAL/>
-       <TYP/>
-       <CLASS/>
-       <REF_CLASS/>
-       <LINE_OF/>
-       <TABLE_OF/>
       </RSTBL>
       <RSTBL>
        <PARAMETER>DPL_SELLIST</PARAMETER>
        <DBSTRUCT>VIMSELLIST</DBSTRUCT>
-       <TYPES/>
-       <OPTIONAL/>
-       <TYP/>
-       <CLASS/>
-       <REF_CLASS/>
-       <LINE_OF/>
-       <TABLE_OF/>
       </RSTBL>
       <RSTBL>
        <PARAMETER>EXCL_CUA_FUNCT</PARAMETER>
        <DBSTRUCT>VIMEXCLFUN</DBSTRUCT>
-       <TYPES/>
-       <OPTIONAL/>
-       <TYP/>
-       <CLASS/>
-       <REF_CLASS/>
-       <LINE_OF/>
-       <TABLE_OF/>
       </RSTBL>
       <RSTBL>
        <PARAMETER>EXTRACT</PARAMETER>
-       <DBSTRUCT/>
-       <TYPES/>
-       <OPTIONAL/>
-       <TYP/>
-       <CLASS/>
-       <REF_CLASS/>
-       <LINE_OF/>
-       <TABLE_OF/>
       </RSTBL>
       <RSTBL>
        <PARAMETER>TOTAL</PARAMETER>
-       <DBSTRUCT/>
-       <TYPES/>
-       <OPTIONAL/>
-       <TYP/>
-       <CLASS/>
-       <REF_CLASS/>
-       <LINE_OF/>
-       <TABLE_OF/>
       </RSTBL>
       <RSTBL>
        <PARAMETER>X_HEADER</PARAMETER>
        <DBSTRUCT>VIMDESC</DBSTRUCT>
-       <TYPES/>
-       <OPTIONAL/>
-       <TYP/>
-       <CLASS/>
-       <REF_CLASS/>
-       <LINE_OF/>
-       <TABLE_OF/>
       </RSTBL>
       <RSTBL>
        <PARAMETER>X_NAMTAB</PARAMETER>
        <DBSTRUCT>VIMNAMTAB</DBSTRUCT>
-       <TYPES/>
-       <OPTIONAL/>
-       <TYP/>
-       <CLASS/>
-       <REF_CLASS/>
-       <LINE_OF/>
-       <TABLE_OF/>
       </RSTBL>
      </TABLES>
      <EXCEPTION>
       <RSEXC>
        <EXCEPTION>MISSING_CORR_NUMBER</EXCEPTION>
-       <IS_RESUMABLE/>
       </RSEXC>
       <RSEXC>
        <EXCEPTION>SAVING_CORRECTION_FAILED</EXCEPTION>
-       <IS_RESUMABLE/>
       </RSEXC>
      </EXCEPTION>
      <DOCUMENTATION>
@@ -501,50 +303,13 @@
       <DESCRIPT>View maint: Overview screen ZP2PH_EXP_AREA</DESCRIPT>
       <TYPE>N</TYPE>
       <NEXTSCREEN>0001</NEXTSCREEN>
-      <CURSOR_POS/>
-      <SCREEN_GRP/>
       <LINES>061</LINES>
       <COLUMNS>083</COLUMNS>
-      <HOLD_DATA/>
-      <FIXED_FONT/>
-      <NO_COMPR/>
-      <NO_EXECUTE/>
-      <KEEP_SCPOS/>
-      <NO_TOOLBAR/>
-      <CTX_MENON/>
      </HEADER>
      <CONTAINERS>
       <RPY_DYCATT>
        <TYPE>SCREEN</TYPE>
        <NAME>SCREEN</NAME>
-       <ELEMENT_OF/>
-       <LINE>000</LINE>
-       <COLUMN>000</COLUMN>
-       <LENGTH>000</LENGTH>
-       <HEIGHT>000</HEIGHT>
-       <LOOP_TYPE/>
-       <LOOP_BLOCK>000</LOOP_BLOCK>
-       <LOOP_DISP>000</LOOP_DISP>
-       <C_RESIZE_V/>
-       <C_RESIZE_H/>
-       <C_LINE_MIN>000</C_LINE_MIN>
-       <C_COLN_MIN>000</C_COLN_MIN>
-       <C_SCROLL_V/>
-       <C_SCROLL_H/>
-       <TC_TABTYPE/>
-       <TC_SEPAR_V/>
-       <TC_SEPAR_H/>
-       <TC_TITLE/>
-       <TC_HEADER/>
-       <TC_CONFIG/>
-       <TC_SEL_LNS/>
-       <TC_SEL_CLS/>
-       <TC_LSEL_CL/>
-       <TC_FIXCOL>000</TC_FIXCOL>
-       <CU_CC_NAME/>
-       <SFW_SWITCHID/>
-       <SFW_SHOWHIDE/>
-       <PROPERTIES/>
       </RPY_DYCATT>
       <RPY_DYCATT>
        <TYPE>TABLE_CTRL</TYPE>
@@ -554,13 +319,8 @@
        <COLUMN>001</COLUMN>
        <LENGTH>083</LENGTH>
        <HEIGHT>059</HEIGHT>
-       <LOOP_TYPE/>
-       <LOOP_BLOCK>000</LOOP_BLOCK>
-       <LOOP_DISP>000</LOOP_DISP>
        <C_RESIZE_V>X</C_RESIZE_V>
        <C_RESIZE_H>X</C_RESIZE_H>
-       <C_LINE_MIN>000</C_LINE_MIN>
-       <C_COLN_MIN>000</C_COLN_MIN>
        <C_SCROLL_V>X</C_SCROLL_V>
        <C_SCROLL_H>X</C_SCROLL_H>
        <TC_TABTYPE>ENTRY</TC_TABTYPE>
@@ -573,10 +333,6 @@
        <TC_SEL_CLS>NONE</TC_SEL_CLS>
        <TC_LSEL_CL>X</TC_LSEL_CL>
        <TC_FIXCOL>001</TC_FIXCOL>
-       <CU_CC_NAME/>
-       <SFW_SWITCHID/>
-       <SFW_SHOWHIDE/>
-       <PROPERTIES/>
       </RPY_DYCATT>
      </CONTAINERS>
      <FIELDS>
@@ -586,66 +342,15 @@
        <TYPE>PUSH_TMPL</TYPE>
        <NAME>VIM_POSI_PUSH</NAME>
        <TEXT>____________________</TEXT>
-       <DROPDOWN/>
-       <ICON_NAME/>
-       <ICON_QINFO/>
-       <ICON_QSPEC/>
-       <WITH_ICON/>
-       <ROLLING/>
        <LINE>061</LINE>
        <COLUMN>019</COLUMN>
        <LENGTH>020</LENGTH>
        <VISLENGTH>020</VISLENGTH>
        <HEIGHT>001</HEIGHT>
-       <GROUP1/>
-       <GROUP2/>
-       <GROUP3/>
-       <GROUP4/>
        <PUSH_FCODE>POSI</PUSH_FCODE>
-       <PUSH_FTYPE/>
-       <CXT_MENON/>
        <FORMAT>CHAR</FORMAT>
-       <FROM_DICT/>
-       <MODIFIC/>
-       <CONV_EXIT/>
-       <PARAM_ID/>
-       <SET_PARAM/>
-       <GET_PARAM/>
-       <UP_LOWER/>
-       <NO_TEMPL/>
-       <FOREIGNKEY/>
-       <INPUT_FLD/>
        <OUTPUT_FLD>X</OUTPUT_FLD>
-       <OUTPUTONLY/>
        <REQU_ENTRY>N</REQU_ENTRY>
-       <POSS_ENTRY/>
-       <DROPFROM/>
-       <RIGHT_JUST/>
-       <LEAD_ZEROS/>
-       <_--2A_ENTRY/>
-       <NO_RESET/>
-       <FIXED_FONT/>
-       <BRIGHT/>
-       <INVISIBLE/>
-       <_--32_DIMENS/>
-       <LABELLEFT/>
-       <LABELRIGHT/>
-       <LTR/>
-       <BIDICTRL/>
-       <DBLCLICK/>
-       <MATCHCODE/>
-       <REF_FIELD/>
-       <TC_TITLE/>
-       <TC_HEADING/>
-       <TC_SELCOL/>
-       <BUTT_RIGHT/>
-       <DICT_I_FKY/>
-       <DICT_I_FKD/>
-       <DICT_I_SGN/>
-       <DICT_I_VAL/>
-       <SFW_SWITCHID/>
-       <SFW_SHOWHIDE/>
-       <PROPERTIES/>
       </RPY_DYFATC>
       <RPY_DYFATC>
        <CONT_TYPE>SCREEN</CONT_TYPE>
@@ -653,66 +358,17 @@
        <TYPE>TEMPLATE</TYPE>
        <NAME>VIM_POSITION_INFO</NAME>
        <TEXT>______________________________</TEXT>
-       <DROPDOWN/>
-       <ICON_NAME/>
-       <ICON_QINFO/>
-       <ICON_QSPEC/>
-       <WITH_ICON/>
-       <ROLLING/>
        <LINE>061</LINE>
        <COLUMN>040</COLUMN>
        <LENGTH>030</LENGTH>
        <VISLENGTH>030</VISLENGTH>
        <HEIGHT>001</HEIGHT>
-       <GROUP1/>
-       <GROUP2/>
-       <GROUP3/>
-       <GROUP4/>
-       <PUSH_FCODE/>
-       <PUSH_FTYPE/>
-       <CXT_MENON/>
        <FORMAT>CHAR</FORMAT>
-       <FROM_DICT/>
-       <MODIFIC/>
-       <CONV_EXIT/>
-       <PARAM_ID/>
-       <SET_PARAM/>
-       <GET_PARAM/>
        <UP_LOWER>X</UP_LOWER>
-       <NO_TEMPL/>
-       <FOREIGNKEY/>
-       <INPUT_FLD/>
        <OUTPUT_FLD>X</OUTPUT_FLD>
        <OUTPUTONLY>X</OUTPUTONLY>
        <REQU_ENTRY>N</REQU_ENTRY>
-       <POSS_ENTRY/>
-       <DROPFROM/>
-       <RIGHT_JUST/>
-       <LEAD_ZEROS/>
-       <_--2A_ENTRY/>
-       <NO_RESET/>
-       <FIXED_FONT/>
-       <BRIGHT/>
-       <INVISIBLE/>
        <_--32_DIMENS>X</_--32_DIMENS>
-       <LABELLEFT/>
-       <LABELRIGHT/>
-       <LTR/>
-       <BIDICTRL/>
-       <DBLCLICK/>
-       <MATCHCODE/>
-       <REF_FIELD/>
-       <TC_TITLE/>
-       <TC_HEADING/>
-       <TC_SELCOL/>
-       <BUTT_RIGHT/>
-       <DICT_I_FKY/>
-       <DICT_I_FKD/>
-       <DICT_I_SGN/>
-       <DICT_I_VAL/>
-       <SFW_SWITCHID/>
-       <SFW_SHOWHIDE/>
-       <PROPERTIES/>
       </RPY_DYFATC>
       <RPY_DYFATC>
        <CONT_TYPE>SCREEN</CONT_TYPE>
@@ -720,66 +376,11 @@
        <TYPE>OKCODE</TYPE>
        <NAME>OK_CODE</NAME>
        <TEXT>____________________</TEXT>
-       <DROPDOWN/>
-       <ICON_NAME/>
-       <ICON_QINFO/>
-       <ICON_QSPEC/>
-       <WITH_ICON/>
-       <ROLLING/>
-       <LINE>000</LINE>
-       <COLUMN>000</COLUMN>
        <LENGTH>020</LENGTH>
        <VISLENGTH>020</VISLENGTH>
        <HEIGHT>001</HEIGHT>
-       <GROUP1/>
-       <GROUP2/>
-       <GROUP3/>
-       <GROUP4/>
-       <PUSH_FCODE/>
-       <PUSH_FTYPE/>
-       <CXT_MENON/>
        <FORMAT>CHAR</FORMAT>
-       <FROM_DICT/>
-       <MODIFIC/>
-       <CONV_EXIT/>
-       <PARAM_ID/>
-       <SET_PARAM/>
-       <GET_PARAM/>
-       <UP_LOWER/>
-       <NO_TEMPL/>
-       <FOREIGNKEY/>
        <INPUT_FLD>X</INPUT_FLD>
-       <OUTPUT_FLD/>
-       <OUTPUTONLY/>
-       <REQU_ENTRY/>
-       <POSS_ENTRY/>
-       <DROPFROM/>
-       <RIGHT_JUST/>
-       <LEAD_ZEROS/>
-       <_--2A_ENTRY/>
-       <NO_RESET/>
-       <FIXED_FONT/>
-       <BRIGHT/>
-       <INVISIBLE/>
-       <_--32_DIMENS/>
-       <LABELLEFT/>
-       <LABELRIGHT/>
-       <LTR/>
-       <BIDICTRL/>
-       <DBLCLICK/>
-       <MATCHCODE/>
-       <REF_FIELD/>
-       <TC_TITLE/>
-       <TC_HEADING/>
-       <TC_SELCOL/>
-       <BUTT_RIGHT/>
-       <DICT_I_FKY/>
-       <DICT_I_FKD/>
-       <DICT_I_SGN/>
-       <DICT_I_VAL/>
-       <SFW_SWITCHID/>
-       <SFW_SHOWHIDE/>
-       <PROPERTIES/>
       </RPY_DYFATC>
       <RPY_DYFATC>
        <CONT_TYPE>TABLE_CTRL</CONT_TYPE>
@@ -787,66 +388,15 @@
        <TYPE>TEMPLATE</TYPE>
        <NAME>VIM_FRAME_FIELD</NAME>
        <TEXT>____________________________________________________________</TEXT>
-       <DROPDOWN/>
-       <ICON_NAME/>
-       <ICON_QINFO/>
-       <ICON_QSPEC/>
-       <WITH_ICON/>
-       <ROLLING/>
        <LINE>001</LINE>
-       <COLUMN>000</COLUMN>
        <LENGTH>060</LENGTH>
        <VISLENGTH>060</VISLENGTH>
        <HEIGHT>001</HEIGHT>
-       <GROUP1/>
-       <GROUP2/>
-       <GROUP3/>
-       <GROUP4/>
-       <PUSH_FCODE/>
-       <PUSH_FTYPE/>
-       <CXT_MENON/>
        <FORMAT>CHAR</FORMAT>
-       <FROM_DICT/>
-       <MODIFIC/>
-       <CONV_EXIT/>
-       <PARAM_ID/>
-       <SET_PARAM/>
-       <GET_PARAM/>
        <UP_LOWER>X</UP_LOWER>
-       <NO_TEMPL/>
-       <FOREIGNKEY/>
-       <INPUT_FLD/>
        <OUTPUT_FLD>X</OUTPUT_FLD>
-       <OUTPUTONLY/>
        <REQU_ENTRY>N</REQU_ENTRY>
-       <POSS_ENTRY/>
-       <DROPFROM/>
-       <RIGHT_JUST/>
-       <LEAD_ZEROS/>
-       <_--2A_ENTRY/>
-       <NO_RESET/>
-       <FIXED_FONT/>
-       <BRIGHT/>
-       <INVISIBLE/>
-       <_--32_DIMENS/>
-       <LABELLEFT/>
-       <LABELRIGHT/>
-       <LTR/>
-       <BIDICTRL/>
-       <DBLCLICK/>
-       <MATCHCODE/>
-       <REF_FIELD/>
        <TC_TITLE>X</TC_TITLE>
-       <TC_HEADING/>
-       <TC_SELCOL/>
-       <BUTT_RIGHT/>
-       <DICT_I_FKY/>
-       <DICT_I_FKD/>
-       <DICT_I_SGN/>
-       <DICT_I_VAL/>
-       <SFW_SWITCHID/>
-       <SFW_SHOWHIDE/>
-       <PROPERTIES/>
       </RPY_DYFATC>
       <RPY_DYFATC>
        <CONT_TYPE>TABLE_CTRL</CONT_TYPE>
@@ -854,66 +404,16 @@
        <TYPE>TEXT</TYPE>
        <NAME>*ZP2PH_EXP_AREA-EXPERT_AREA</NAME>
        <TEXT>Expert_Area_____________________________</TEXT>
-       <DROPDOWN/>
-       <ICON_NAME/>
-       <ICON_QINFO/>
-       <ICON_QSPEC/>
-       <WITH_ICON/>
-       <ROLLING/>
        <LINE>001</LINE>
        <COLUMN>001</COLUMN>
        <LENGTH>040</LENGTH>
        <VISLENGTH>020</VISLENGTH>
        <HEIGHT>001</HEIGHT>
-       <GROUP1/>
-       <GROUP2/>
-       <GROUP3/>
-       <GROUP4/>
-       <PUSH_FCODE/>
-       <PUSH_FTYPE/>
-       <CXT_MENON/>
        <FORMAT>CHAR</FORMAT>
        <FROM_DICT>X</FROM_DICT>
        <MODIFIC>V</MODIFIC>
-       <CONV_EXIT/>
-       <PARAM_ID/>
-       <SET_PARAM/>
-       <GET_PARAM/>
-       <UP_LOWER/>
-       <NO_TEMPL/>
-       <FOREIGNKEY/>
-       <INPUT_FLD/>
-       <OUTPUT_FLD/>
-       <OUTPUTONLY/>
        <REQU_ENTRY>N</REQU_ENTRY>
-       <POSS_ENTRY/>
-       <DROPFROM/>
-       <RIGHT_JUST/>
-       <LEAD_ZEROS/>
-       <_--2A_ENTRY/>
-       <NO_RESET/>
-       <FIXED_FONT/>
-       <BRIGHT/>
-       <INVISIBLE/>
-       <_--32_DIMENS/>
-       <LABELLEFT/>
-       <LABELRIGHT/>
-       <LTR/>
-       <BIDICTRL/>
-       <DBLCLICK/>
-       <MATCHCODE/>
-       <REF_FIELD/>
-       <TC_TITLE/>
        <TC_HEADING>X</TC_HEADING>
-       <TC_SELCOL/>
-       <BUTT_RIGHT/>
-       <DICT_I_FKY/>
-       <DICT_I_FKD/>
-       <DICT_I_SGN/>
-       <DICT_I_VAL/>
-       <SFW_SWITCHID/>
-       <SFW_SHOWHIDE/>
-       <PROPERTIES/>
       </RPY_DYFATC>
       <RPY_DYFATC>
        <CONT_TYPE>TABLE_CTRL</CONT_TYPE>
@@ -921,133 +421,30 @@
        <TYPE>TEXT</TYPE>
        <NAME>*ZP2PH_EXP_AREA_T-DESCRIPTION</NAME>
        <TEXT>Expert_Area_____________________________</TEXT>
-       <DROPDOWN/>
-       <ICON_NAME/>
-       <ICON_QINFO/>
-       <ICON_QSPEC/>
-       <WITH_ICON/>
-       <ROLLING/>
        <LINE>001</LINE>
        <COLUMN>002</COLUMN>
        <LENGTH>040</LENGTH>
        <VISLENGTH>255</VISLENGTH>
        <HEIGHT>001</HEIGHT>
-       <GROUP1/>
-       <GROUP2/>
-       <GROUP3/>
-       <GROUP4/>
-       <PUSH_FCODE/>
-       <PUSH_FTYPE/>
-       <CXT_MENON/>
        <FORMAT>CHAR</FORMAT>
        <FROM_DICT>X</FROM_DICT>
        <MODIFIC>V</MODIFIC>
-       <CONV_EXIT/>
-       <PARAM_ID/>
-       <SET_PARAM/>
-       <GET_PARAM/>
-       <UP_LOWER/>
-       <NO_TEMPL/>
-       <FOREIGNKEY/>
-       <INPUT_FLD/>
-       <OUTPUT_FLD/>
-       <OUTPUTONLY/>
        <REQU_ENTRY>N</REQU_ENTRY>
-       <POSS_ENTRY/>
-       <DROPFROM/>
-       <RIGHT_JUST/>
-       <LEAD_ZEROS/>
-       <_--2A_ENTRY/>
-       <NO_RESET/>
-       <FIXED_FONT/>
-       <BRIGHT/>
-       <INVISIBLE/>
-       <_--32_DIMENS/>
-       <LABELLEFT/>
-       <LABELRIGHT/>
-       <LTR/>
-       <BIDICTRL/>
-       <DBLCLICK/>
-       <MATCHCODE/>
-       <REF_FIELD/>
-       <TC_TITLE/>
        <TC_HEADING>X</TC_HEADING>
-       <TC_SELCOL/>
-       <BUTT_RIGHT/>
-       <DICT_I_FKY/>
-       <DICT_I_FKD/>
-       <DICT_I_SGN/>
-       <DICT_I_VAL/>
-       <SFW_SWITCHID/>
-       <SFW_SHOWHIDE/>
-       <PROPERTIES/>
       </RPY_DYFATC>
       <RPY_DYFATC>
        <CONT_TYPE>TABLE_CTRL</CONT_TYPE>
        <CONT_NAME>TCTRL_ZP2PH_EXP_AREA</CONT_NAME>
        <TYPE>CHECK</TYPE>
        <NAME>VIM_MARKED</NAME>
-       <TEXT/>
-       <DROPDOWN/>
-       <ICON_NAME/>
-       <ICON_QINFO/>
-       <ICON_QSPEC/>
-       <WITH_ICON/>
-       <ROLLING/>
        <LINE>001</LINE>
-       <COLUMN>000</COLUMN>
        <LENGTH>001</LENGTH>
        <VISLENGTH>001</VISLENGTH>
        <HEIGHT>001</HEIGHT>
-       <GROUP1/>
-       <GROUP2/>
-       <GROUP3/>
-       <GROUP4/>
-       <PUSH_FCODE/>
-       <PUSH_FTYPE/>
-       <CXT_MENON/>
        <FORMAT>CHAR</FORMAT>
-       <FROM_DICT/>
-       <MODIFIC/>
-       <CONV_EXIT/>
-       <PARAM_ID/>
-       <SET_PARAM/>
-       <GET_PARAM/>
-       <UP_LOWER/>
-       <NO_TEMPL/>
-       <FOREIGNKEY/>
        <INPUT_FLD>X</INPUT_FLD>
        <OUTPUT_FLD>X</OUTPUT_FLD>
-       <OUTPUTONLY/>
-       <REQU_ENTRY/>
-       <POSS_ENTRY/>
-       <DROPFROM/>
-       <RIGHT_JUST/>
-       <LEAD_ZEROS/>
-       <_--2A_ENTRY/>
-       <NO_RESET/>
-       <FIXED_FONT/>
-       <BRIGHT/>
-       <INVISIBLE/>
-       <_--32_DIMENS/>
-       <LABELLEFT/>
-       <LABELRIGHT/>
-       <LTR/>
-       <BIDICTRL/>
-       <DBLCLICK/>
-       <MATCHCODE/>
-       <REF_FIELD/>
-       <TC_TITLE/>
-       <TC_HEADING/>
        <TC_SELCOL>X</TC_SELCOL>
-       <BUTT_RIGHT/>
-       <DICT_I_FKY/>
-       <DICT_I_FKD/>
-       <DICT_I_SGN/>
-       <DICT_I_VAL/>
-       <SFW_SWITCHID/>
-       <SFW_SHOWHIDE/>
-       <PROPERTIES/>
       </RPY_DYFATC>
       <RPY_DYFATC>
        <CONT_TYPE>TABLE_CTRL</CONT_TYPE>
@@ -1055,66 +452,18 @@
        <TYPE>TEMPLATE</TYPE>
        <NAME>ZP2PH_EXP_AREA-EXPERT_AREA</NAME>
        <TEXT>____________________</TEXT>
-       <DROPDOWN/>
-       <ICON_NAME/>
-       <ICON_QINFO/>
-       <ICON_QSPEC/>
-       <WITH_ICON/>
-       <ROLLING/>
        <LINE>001</LINE>
        <COLUMN>001</COLUMN>
        <LENGTH>020</LENGTH>
        <VISLENGTH>020</VISLENGTH>
        <HEIGHT>001</HEIGHT>
        <GROUP1>KEY</GROUP1>
-       <GROUP2/>
-       <GROUP3/>
-       <GROUP4/>
-       <PUSH_FCODE/>
-       <PUSH_FTYPE/>
-       <CXT_MENON/>
        <FORMAT>CHAR</FORMAT>
        <FROM_DICT>X</FROM_DICT>
        <MODIFIC>X</MODIFIC>
-       <CONV_EXIT/>
-       <PARAM_ID/>
-       <SET_PARAM/>
-       <GET_PARAM/>
-       <UP_LOWER/>
-       <NO_TEMPL/>
        <FOREIGNKEY>X</FOREIGNKEY>
-       <INPUT_FLD/>
        <OUTPUT_FLD>X</OUTPUT_FLD>
-       <OUTPUTONLY/>
        <REQU_ENTRY>N</REQU_ENTRY>
-       <POSS_ENTRY/>
-       <DROPFROM/>
-       <RIGHT_JUST/>
-       <LEAD_ZEROS/>
-       <_--2A_ENTRY/>
-       <NO_RESET/>
-       <FIXED_FONT/>
-       <BRIGHT/>
-       <INVISIBLE/>
-       <_--32_DIMENS/>
-       <LABELLEFT/>
-       <LABELRIGHT/>
-       <LTR/>
-       <BIDICTRL/>
-       <DBLCLICK/>
-       <MATCHCODE/>
-       <REF_FIELD/>
-       <TC_TITLE/>
-       <TC_HEADING/>
-       <TC_SELCOL/>
-       <BUTT_RIGHT/>
-       <DICT_I_FKY/>
-       <DICT_I_FKD/>
-       <DICT_I_SGN/>
-       <DICT_I_VAL/>
-       <SFW_SWITCHID/>
-       <SFW_SHOWHIDE/>
-       <PROPERTIES/>
       </RPY_DYFATC>
       <RPY_DYFATC>
        <CONT_TYPE>TABLE_CTRL</CONT_TYPE>
@@ -1122,66 +471,18 @@
        <TYPE>TEMPLATE</TYPE>
        <NAME>ZP2PH_EXP_AREA_T-DESCRIPTION</NAME>
        <TEXT>____________________________________________________________________________________________________________________________________</TEXT>
-       <DROPDOWN/>
-       <ICON_NAME/>
-       <ICON_QINFO/>
-       <ICON_QSPEC/>
-       <WITH_ICON/>
-       <ROLLING/>
        <LINE>001</LINE>
        <COLUMN>002</COLUMN>
        <LENGTH>255</LENGTH>
        <VISLENGTH>255</VISLENGTH>
        <HEIGHT>001</HEIGHT>
-       <GROUP1/>
-       <GROUP2/>
-       <GROUP3/>
-       <GROUP4/>
-       <PUSH_FCODE/>
-       <PUSH_FTYPE/>
-       <CXT_MENON/>
        <FORMAT>CHAR</FORMAT>
        <FROM_DICT>X</FROM_DICT>
        <MODIFIC>X</MODIFIC>
-       <CONV_EXIT/>
-       <PARAM_ID/>
-       <SET_PARAM/>
-       <GET_PARAM/>
        <UP_LOWER>X</UP_LOWER>
-       <NO_TEMPL/>
        <FOREIGNKEY>X</FOREIGNKEY>
        <INPUT_FLD>X</INPUT_FLD>
        <OUTPUT_FLD>X</OUTPUT_FLD>
-       <OUTPUTONLY/>
-       <REQU_ENTRY/>
-       <POSS_ENTRY/>
-       <DROPFROM/>
-       <RIGHT_JUST/>
-       <LEAD_ZEROS/>
-       <_--2A_ENTRY/>
-       <NO_RESET/>
-       <FIXED_FONT/>
-       <BRIGHT/>
-       <INVISIBLE/>
-       <_--32_DIMENS/>
-       <LABELLEFT/>
-       <LABELRIGHT/>
-       <LTR/>
-       <BIDICTRL/>
-       <DBLCLICK/>
-       <MATCHCODE/>
-       <REF_FIELD/>
-       <TC_TITLE/>
-       <TC_HEADING/>
-       <TC_SELCOL/>
-       <BUTT_RIGHT/>
-       <DICT_I_FKY/>
-       <DICT_I_FKD/>
-       <DICT_I_SGN/>
-       <DICT_I_VAL/>
-       <SFW_SWITCHID/>
-       <SFW_SHOWHIDE/>
-       <PROPERTIES/>
       </RPY_DYFATC>
      </FIELDS>
      <FLOW_LOGIC>
@@ -1298,27 +599,7 @@
      </SPACES>
     </item>
    </DYNPROS>
-   <CUA>
-    <ADM>
-     <ACTCODE/>
-     <MENCODE/>
-     <PFKCODE/>
-     <DEFAULTACT/>
-     <DEFAULTPFK/>
-     <MOD_LANGU/>
-    </ADM>
-    <STA/>
-    <FUN/>
-    <MEN/>
-    <MTX/>
-    <ACT/>
-    <BUT/>
-    <PFK/>
-    <SET/>
-    <DOC/>
-    <TIT/>
-    <BIV/>
-   </CUA>
+   <CUA/>
   </asx:values>
  </asx:abap>
 </abapGit>
