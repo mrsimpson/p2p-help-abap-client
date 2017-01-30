@@ -7,17 +7,7 @@
     <FIEL1>BO_SERVICE</FIEL1>
     <FIEL2>ACTVT</FIEL2>
     <FIEL3>USER</FIEL3>
-    <FIEL4/>
-    <FIEL5/>
-    <FIEL6/>
-    <FIEL7/>
-    <FIEL8/>
-    <FIEL9/>
-    <FIEL0/>
     <OCLSS>ZP2P</OCLSS>
-    <BNAME/>
-    <FBLOCK/>
-    <CONVERSION/>
    </TOBJ>
    <TOBJT>
     <LANGU>E</LANGU>
@@ -26,12 +16,6 @@
    </TOBJT>
    <TOBJVORFLG>
     <OBJCT>ZP2P_EXP</OBJCT>
-    <FLAG1/>
-    <FLAG2/>
-    <FLAG3/>
-    <FLAG4/>
-    <FLAG5/>
-    <ATTRIBUTES/>
    </TOBJVORFLG>
    <TACTZ/>
    <TOBJVORDAT/>

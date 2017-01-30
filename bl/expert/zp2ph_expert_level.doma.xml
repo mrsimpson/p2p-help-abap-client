@@ -8,30 +8,8 @@
     <DATATYPE>INT1</DATATYPE>
     <LENG>000003</LENG>
     <OUTPUTLEN>000003</OUTPUTLEN>
-    <DECIMALS>000000</DECIMALS>
-    <LOWERCASE/>
-    <SIGNFLAG/>
-    <LANGFLAG/>
     <VALEXI>X</VALEXI>
-    <ENTITYTAB/>
-    <CONVEXIT/>
-    <MASK/>
-    <MASKLEN>0000</MASKLEN>
     <DDTEXT>Level of expertise in a particular area</DDTEXT>
-    <ACTFLAG/>
-    <APPLCLASS/>
-    <AUTHCLASS>00</AUTHCLASS>
-    <AS4USER/>
-    <AS4DATE>0000-00-00</AS4DATE>
-    <AS4TIME>00:00:00</AS4TIME>
-    <DOMMASTER/>
-    <RESERVEDOM/>
-    <DOMGLOBAL/>
-    <APPENDNAME/>
-    <APPEXIST/>
-    <PROXYTYPE/>
-    <OUTPUTSTYLE>00</OUTPUTSTYLE>
-    <AMPMFORMAT/>
    </DD01V>
    <DD07V_TAB>
     <DD07V>
@@ -41,9 +19,6 @@
      <DOMVALUE_L>0</DOMVALUE_L>
      <DOMVALUE_H>10</DOMVALUE_H>
      <DDTEXT>Novice</DDTEXT>
-     <DOMVAL_LD/>
-     <DOMVAL_HD/>
-     <APPVAL/>
     </DD07V>
     <DD07V>
      <DOMNAME>ZP2PH_EXPERT_LEVEL</DOMNAME>
@@ -52,9 +27,6 @@
      <DOMVALUE_L>11</DOMVALUE_L>
      <DOMVALUE_H>30</DOMVALUE_H>
      <DDTEXT>Beginner</DDTEXT>
-     <DOMVAL_LD/>
-     <DOMVAL_HD/>
-     <APPVAL/>
     </DD07V>
     <DD07V>
      <DOMNAME>ZP2PH_EXPERT_LEVEL</DOMNAME>
@@ -63,9 +35,6 @@
      <DOMVALUE_L>31</DOMVALUE_L>
      <DOMVALUE_H>60</DOMVALUE_H>
      <DDTEXT>Advanced</DDTEXT>
-     <DOMVAL_LD/>
-     <DOMVAL_HD/>
-     <APPVAL/>
     </DD07V>
     <DD07V>
      <DOMNAME>ZP2PH_EXPERT_LEVEL</DOMNAME>
@@ -74,9 +43,6 @@
      <DOMVALUE_L>61</DOMVALUE_L>
      <DOMVALUE_H>80</DOMVALUE_H>
      <DDTEXT>Master</DDTEXT>
-     <DOMVAL_LD/>
-     <DOMVAL_HD/>
-     <APPVAL/>
     </DD07V>
     <DD07V>
      <DOMNAME>ZP2PH_EXPERT_LEVEL</DOMNAME>
@@ -85,9 +51,6 @@
      <DOMVALUE_L>81</DOMVALUE_L>
      <DOMVALUE_H>100</DOMVALUE_H>
      <DDTEXT>Expert</DDTEXT>
-     <DOMVAL_LD/>
-     <DOMVAL_HD/>
-     <APPVAL/>
     </DD07V>
    </DD07V_TAB>
   </asx:values>
